@@ -1,0 +1,43 @@
+{
+    "name": "mattpetitt.com",
+    "description": "The personal website for Matt@Petitt.io",
+    "demo": "https://mattpetitt.com",
+    "version": "1.0.0",
+    "private": true,
+    "engines": {
+        "ghost": ">=1.2.0"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Matt Petitt",
+        "email": "Matt@Petitt.io",
+        "url": "https://mattpetitt.com"
+    },
+    "keywords": [],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mattpetitt/mattpetitt.com.git"
+    },
+    "scripts": {
+        "start": "concurrently --kill-others \"jekyll serve\" \"gulp watch\"",
+        "build": "concurrently --kill-others \"jekyll build\" \"gulp build\""
+    },
+    "bugs": "https://github.com/mattpetitt/mattpetitt.com/issues",
+    "devDependencies": {
+        "autoprefixer": "6.3.6",
+        "concurrently": "^3.5.1",
+        "cssnano": "3.7.1",
+        "gulp": "^3.9.1",
+        "gulp-livereload": "3.8.1",
+        "gulp-nodemon": "2.1.0",
+        "gulp-postcss": "6.1.1",
+        "gulp-sourcemaps": "1.6.0",
+        "gulp-util": "3.0.7",
+        "gulp-watch": "4.3.8",
+        "gulp-zip": "4.0.0",
+        "postcss-color-function": "2.0.1",
+        "postcss-custom-properties": "5.0.1",
+        "postcss-easy-import": "1.0.1"
+    },
+    "dependencies": {}
+}

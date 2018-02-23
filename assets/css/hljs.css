@@ -1,0 +1,101 @@
+@import "global.css";
+
+.highlight {
+    width: 100%;
+}
+
+.hljs {
+    margin: 20px 0;
+    color: var(--whitegrey);
+    background: var(--brand);
+    display: block;
+    overflow-x: auto;
+    padding: 2em;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(39,44,49,0.16) 8px 14px 38px, rgba(39, 44, 49, 0.13) 1px 3px 8px;
+    transition: all 500ms ease;
+}
+
+.hljs table {
+    margin: 0 !important;
+    background: transparent !important;
+}
+
+.hljs td {
+    background: transparent !important;
+    background-image: none !important;
+    border: none !important;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+    color: var(--blue)
+}
+
+.hljs-number {
+    color: var(--red)
+}
+
+.hljs .k,
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-deletion {
+    color: var(--blue)
+}
+
+.hljs-string,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link {
+    color: var(--green)
+}
+
+.hljs-comment,
+.hljs-literal,
+.hljs-quote {
+    color: var(--lightgrey)
+}
+
+.hljs-meta,
+.hljs .nx {
+    color: var(--yellow)
+}
+
+.hljs-attr,
+.hljs-addition {
+    color: var(--green)
+}
+
+.hljs-section,
+.hljs-title,
+.hljs-type {
+    color: var(--yellow);
+}
+
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-tag {
+    color: var(--yellow);
+}
+
+.hljs-emphasis {
+    font-style: italic
+}
+
+.hljs-strong {
+    font-weight: bold
+}
+
+.hljs .gutter {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid var(--midgrey) !important;
+    display: block;
+}
+
+.lineno,
+.lineno .hljs-number {
+    color: var(--midgrey);
+}

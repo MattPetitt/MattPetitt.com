@@ -1,0 +1,8 @@
+blog:
+  name: blog
+  description: Essays on Making Money for other people.
+  cover: assets/images/code.jpg
+work:
+  name: work
+  description: Thing's I've Made
+  cover: assets/images/work.jpg
