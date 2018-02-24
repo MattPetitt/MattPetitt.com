@@ -28,7 +28,7 @@ email: Matt@Petitt.io # replace by your email
 google_analytics: UA-114387972-1 # replace with your GA tracking identifier
 
 # Permalinks
-permalink: /:title
+permalink: /:title/
 # permalink: /author/:author
 # permalink: /tag/:tag
 
