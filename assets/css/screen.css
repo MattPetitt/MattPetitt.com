@@ -638,6 +638,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
     background: var(--lightgrey) center center;
     background-size: cover;
     border-radius: 10px;
+    box-shadow: rgba(39, 44, 49, 0.4) 0 14px 38px, rgba(39, 44, 49, 0.4) 0 3px 8px;
 }
 
 @media (max-width: 1170px) {
@@ -657,7 +658,8 @@ The first (most recent) post in the list is styled to be bigger than the others 
 .post-full-content {
     position: relative;
     margin: 0 auto;
-    padding: 70px 100px 0;
+    padding: 70px 100px;
+    border-radius: 10px;
     min-height: 230px;
     font-family: 'Open Sans', serif;
     font-size: 1.8rem;
@@ -665,9 +667,13 @@ The first (most recent) post in the list is styled to be bigger than the others 
     background: #fff;
 }
 
+.post .post-full-content {
+    box-shadow: rgba(39, 44, 49, 0.05) 0 14px 38px, rgba(39, 44, 49, 0.05) 0 3px 8px;
+}
+
 @media (max-width: 1170px) {
     .post-full-content {
-        padding: 5vw 7vw 0;
+        padding: 5vw 7vw;
     }
 }
 
@@ -684,9 +690,9 @@ The first (most recent) post in the list is styled to be bigger than the others 
     left: -5px;
     z-index: -1;
     display: block;
-    width: 20px;
-    height: 200px;
-    background: rgba(39, 44, 49, .35);
+    width: 30px;
+    height: 500px;
+    background: rgba(39,44,49,.1);
     filter: blur(5px);
     transform: rotate(-5deg);
 }
@@ -698,9 +704,9 @@ The first (most recent) post in the list is styled to be bigger than the others 
     right: -5px;
     z-index: -1;
     display: block;
-    width: 20px;
-    height: 200px;
-    background: rgba(39, 44, 49, 0.15);
+    width: 30px;
+    height: 500px;
+    background: rgba(39, 44, 49, 0.1);
     filter: blur(5px);
     transform: rotate(5deg);
 }
@@ -979,6 +985,9 @@ Usage (In Ghost editor):
 
 /* Some grouped styles for smaller viewports */
 @media (max-width: 500px) {
+    .post-full-content {
+        font-size: 1.7rem;
+    }
     .post-full-meta {
         font-size: 1.2rem;
         line-height: 1.3em;
@@ -994,7 +1003,7 @@ Usage (In Ghost editor):
     }
 
     .post-full-content {
-        padding: 0;
+        padding: 1.7rem;
     }
 
     .post-full-content:before,
@@ -1187,7 +1196,7 @@ Usage (In Ghost editor):
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 3vw 0 6vw 0;
+    padding: 3vw 0 0 0;
     max-width: 840px;
 }
 
@@ -1410,9 +1419,35 @@ Usage (In Ghost editor):
     align-items: center;
     height: 60px;
     border-bottom: rgba(0, 0, 0, 0.06) 1px solid;
-    background: rgba(255, 255, 255, 0.95);
+    background: color(var(--brand)) no-repeat center center;
     transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
     transform: translate3d(0, -120%, 0);
+    opacity: 0.95;
+}
+
+.floating-header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    background: rgba(0, 0, 0, 0.18);
+}
+
+.floating-header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    z-index: 10;
+    display: block;
+    height: 80px;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
 }
 
 .floating-active {
@@ -1434,7 +1469,7 @@ Usage (In Ghost editor):
 .floating-header-logo a {
     display: flex;
     align-items: center;
-    color: var(--darkgrey);
+    color: var(--whitegrey);
     line-height: 1.1em;
     font-weight: 700;
 }
@@ -1448,21 +1483,18 @@ Usage (In Ghost editor):
     max-height: 20px;
 }
 
-.floating-header-divider {
-    margin: 0 5px;
-    line-height: 1em;
-}
-
 .floating-header-title {
     flex: 1;
     overflow: hidden;
     margin: 0;
-    color: #2e2e2e;
+    color: var(--whitegrey);
     font-size: 1.6rem;
     line-height: 1.3em;
     font-weight: bold;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-family: Playfair Display,serif;
+    text-align: center;
 }
 
 .floating-header-share {
@@ -1472,6 +1504,7 @@ Usage (In Ghost editor):
     padding-left: 2%;
     font-size: 1.3rem;
     line-height: 1;
+
 }
 
 .floating-header-share a {
@@ -1491,7 +1524,7 @@ Usage (In Ghost editor):
     display: flex;
     align-items: center;
     margin-right: 10px;
-    color: rgba(0, 0, 0, 0.7);
+    color: var(--whitegrey);
     font-weight: 500;
 }
 
@@ -1574,7 +1607,7 @@ Usage (In Ghost editor):
 
 @media (max-width: 900px) {
     .floating-header {
-        height: 40px;
+        height: 50px;
     }
 
     .floating-header-title,
@@ -1584,8 +1617,8 @@ Usage (In Ghost editor):
 
     .floating-header-share-tw,
     .floating-header-share-fb {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         line-height: 38px;
     }
 }
@@ -1593,10 +1626,6 @@ Usage (In Ghost editor):
 @media (max-width: 800px) {
     .floating-header-logo {
         margin-left: 10px;
-    }
-
-    .floating-header-logo a {
-        color: #2e2e2e;
     }
 
     .floating-header-title,

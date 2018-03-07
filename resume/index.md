@@ -4,7 +4,7 @@ current: resume
 title: Resume
 navigation: true
 class: page-template
-subclass: 'page'
+subclass: 'plain'
 ---
 
 #### Senior Frontend Developer
