@@ -4,53 +4,41 @@ current: resume
 title: Resume
 navigation: true
 class: page-template
-subclass: 'page'
+subclass: 'plain resume'
 ---
 
-#### Senior Frontend Developer
-Extensia  
-Sterling, VA
+#### Profile
+I am a full time developer based in Reston VA. I specialize in responsive, dynamic, and highly interactive front-end web experiences. For the last 5 years I have helped startups in the DC area rapidly launch and maintain their initial web presence. I also have extensive experience with analytics, SEO, A/B testing, and digital marketing.
 
-Building a WYSIWYG ID card designer and cloud printer software for HID printers
-using Bootstrap, Kendo-UI, Angular, Typescript, and Fabric.js.
+#### Senior Front-end Developer
+Extensia - Sterling, VA  
+Feb 2017 - Present
+
+As the owner of the web-development portion of our project, I was able to take us from no web product to initial launch in under a year. I built a canvas-based WYSIWYG ID card designer from scratch using Typscript, Fabric.js, Angular, Bootstrap, Kendo, and Webpack. I also built an ID card template and printer management portal using Java, Tapestry, Kendo, and Bootstrap.
 
 #### Lead UX/UI Developer
-CuriosityStream  
-Silver Spring, MD
+CuriosityStream - Silver Spring, MD   
+Oct 2014 - Feb 2017
 
-I built and manage 4 different SPA applications built in Angular, React, Redux,
-Bootstrap, and SASS. A marketing site, video on demand streaming application, a
-media CMS dashboard, and a live streaming site.
+As sole Front-End developer I helped take us from no product to launch within 6 months. I worked with our digital marketing firm to optimize our marketing funnel by setting up analytics, tag-management, SEO, and A/B testing. I built and managed 4 different SPA applications built in Angular, React, Redux, Bootstrap, and SASS. A marketing site, video on demand streaming application, a media CMS dashboard, a live streaming site, and a Wordpress blog.
 
 #### Senior Front-End Developer
-VideoBlocks  
-Reston, VA
+StoryBlocks - Reston, VA  
+May 2014 - Oct - 2014
 
-Worked on improving and fixing the Front-End for three large PHP projects.
-Created designs and coded responsive pages for pushes into mobile advertising.
-Created Emails for marketing team. Created channel specific landing pages for
-social-media and SEM.
-
-#### Front-End and Rails Developer
-Synapsify  
-Bethesda, MD
-
-Worked on the Back-End and Front-End for a MVP Ruby on Rails application.
+Worked on improving and re-designing the front-end for three large PHP projects. Created designs and coded responsive pages for pushes into mobile advertising. Worked with the marketing team to build and optimize email campaigns. Created channel specific landing pages for social-media and SEM.
 
 #### Front-End Developer
-Hodgson Consulting  
-Kensington, MD
+Hodgson Consulting - Kensington, MD  
+Sep 2013 - May 2014
 
-I create the HTML, CSS, and JavaScript for .NET web sites and web applications,
-as well as maintain the Front-end for legacy .NET and WordPress sites. Worked
-with both converting PSD’s to HTML, as well as working off my own designs.
+I built out and helped integrate the responsive front-ends for CMS based .NET web sites and web applications, as well as maintained the front-end for legacy .NET and WordPress sites.
 
-#### Web Application Developer
-Innolance  
-Sterling, VA
+#### Contracts
+Front-End Developer, Pipevine; McLean, VA; Apr 2014 - July 2014  
+Front-End and Rails Developer, Synapsify; Bethesda, MD; Nov 2013 - Apr 2014  
+Web Application Developer, Innolance; Sterling, VA; Feb 2013 - Sep 2013
 
-Worked as a contractor on projects independently, as well as with a team of
-developers, locally and off shore. I worked on WordPress, PHP, Ruby on Rails,
-and static websites. I also worked heavily in communicating with and meeting
-clients, then relaying those points to the development and graphic design teams
-off shore.
+#### Hackathons
+Twitters 2nd Place prize at HackMIT for PartyGenius; Cambridge, MA; Nov 2013  
+Y-Hack; New Haven, CT; Nov 2013  

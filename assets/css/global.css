@@ -413,7 +413,6 @@ blockquote cite a {
 }
 
 a {
-    font-weight: 600;
     color: color(var(--blue) l(-5%));
     text-decoration: none;
 }
