@@ -6,7 +6,7 @@ navigation: True
 title: How To Roll Your Own Streaming Service
 description: In less than a year we went from two developers without a beta to beating Netflix to an international launch. Pro-tip, it’s half as hard and twice as infuriating as you think.
 date: 2016-02-24
-tags: [Work, Blog]
+tags: [Blog]
 class: post-template
 subclass: 'post tag-code'
 author: mattpetitt
