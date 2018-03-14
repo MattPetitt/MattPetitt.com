@@ -633,8 +633,8 @@ The first (most recent) post in the list is styled to be bigger than the others 
 }
 
 .post-full-image {
-    margin: 0 -10vw -165px;
-    height: 800px;
+    margin: 0 -5vw -75px;
+    height: 600px;
     background: var(--lightgrey) center center;
     background-size: cover;
     border-radius: 10px;
@@ -643,8 +643,8 @@ The first (most recent) post in the list is styled to be bigger than the others 
 
 @media (max-width: 1170px) {
     .post-full-image {
-        margin: 0 -4vw -100px;
-        height: 600px;
+        margin: 0 -4vw -50px;
+        height: 500px;
         border-radius: 0;
     }
 }
@@ -660,20 +660,31 @@ The first (most recent) post in the list is styled to be bigger than the others 
     margin: 0 auto;
     padding: 70px 100px;
     border-radius: 10px;
-    min-height: 230px;
+    min-height: 520px;
     font-family: 'Open Sans', serif;
     font-size: 1.8rem;
     line-height: 1.6em;
     background: #fff;
 }
 
-.post .post-full-content {
-    box-shadow: rgba(39, 44, 49, 0.05) 0 14px 38px, rgba(39, 44, 49, 0.05) 0 3px 8px;
+.post-full-content .top-image {
+    margin-top: -70px;
+    border-radius: 9px 9px 0 0;
+}
+
+.post .post-full-content,
+.work .post-full-content {
+    box-shadow: 0 0 38px rgba(39, 44, 49, 0.1), 0 0 8px rgba(39, 44, 49, .1);
 }
 
 @media (max-width: 1170px) {
     .post-full-content {
         padding: 5vw 7vw;
+    }
+    .post-full-content .top-image {
+        border-radius: 0;
+        margin: 0;
+        width: 100%;
     }
 }
 
@@ -692,7 +703,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
     display: block;
     width: 30px;
     height: 500px;
-    background: rgba(39,44,49,.1);
+    background: rgba(39, 44, 49, .1);
     filter: blur(5px);
     transform: rotate(-5deg);
 }
@@ -988,6 +999,7 @@ Usage (In Ghost editor):
     .post-full-content {
         font-size: 1.7rem;
     }
+
     .post-full-meta {
         font-size: 1.2rem;
         line-height: 1.3em;
@@ -1425,31 +1437,6 @@ Usage (In Ghost editor):
     opacity: 0.95;
 }
 
-.floating-header:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    display: block;
-    background: rgba(0, 0, 0, 0.18);
-}
-
-.floating-header:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: auto;
-    left: 0;
-    z-index: 10;
-    display: block;
-    height: 80px;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
-}
-
 .floating-active {
     visibility: visible;
     transition: all 500ms cubic-bezier(0.22, 1, 0.27, 1);
@@ -1493,7 +1480,7 @@ Usage (In Ghost editor):
     font-weight: bold;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-family: Playfair Display,serif;
+    font-family: Playfair Display, serif;
     text-align: center;
 }
 
