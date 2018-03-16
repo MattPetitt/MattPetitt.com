@@ -997,7 +997,7 @@ Usage (In Ghost editor):
 /* Some grouped styles for smaller viewports */
 @media (max-width: 500px) {
     .post-full-content {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .post-full-meta {
